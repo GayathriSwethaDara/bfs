@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Page</title>
+    <style>
+   #ex {
+    margin: auto;
+    box-sizing: content-box;
+    width: 300px;
+    height: 530px;
+    padding: 80px;
+    border: 5px solid rgb(0, 230, 230);
+  }
+  </style>
+</head>
+<body style="background-color:rgb(230, 230, 255);">
+<div id="ex">
+    <h2 align="center">Registration Form</h2>
+    <form align="justify" method="POST" action="/registered">
+  First Name: <input type="text" name="fn" ><br><br>
+  Last Name: <input type="text" name="ln" ><br><br>
+  Mobile No: <input type="number" name="mb" ><br><br>
+         Account No: <input type="number" name="an" ><br><br>
+  Date of Birth: <input type="date" name="dob" ><br><br>
+  Gender:
+  <input type="radio" name="r" value="male">Male
+  <input type="radio" name="r" value="female">Female<br><br>
+      E-mail: <input type="text" name="e" required><br><br>
+        Username: <input type="text" name="uname" required><br><br>
+        Password: <input type="password" name="password" required><br><br>
+
+  Address:
+    <textarea rows=1> </textarea><br><br>
+        <input type="checkbox"> Remember me<br><br>
+  <input type="submit" value="Register">
+        <right><input type="reset" value="Reset"></right>
+        <br>
+        <br>
+
+</form>
+<form align="left" action="/login">
+            <input type="submit" value="I Have an Account">
+        </form>
+    </div>
+</body>
+</html>
